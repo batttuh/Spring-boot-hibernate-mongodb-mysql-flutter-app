@@ -6,8 +6,8 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name="usercontext")
-public class UserContext {
+@Table(name="useroperations")
+public class UserOperations {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -15,4 +15,7 @@ public class UserContext {
     private String context;
     @Column(name="imageUrl")
     private String imageUrl;
+    @Column(name="mail")
+    private String mail;
+
 }
